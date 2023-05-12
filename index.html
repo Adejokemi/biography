@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>My Biography</title>
+</head>
+<body>
+    <div class="bio-container">
+        <div class="idan">
+      <img src="IMG_20210314_084901_505.jpg" alt="My Picture">
+      <h1>Omitogun Sherifat Ajoke</h1>
+      <p>I'm a multi-talented individual with a passion for baking, volunteering, exploration, and frontend development. With a diploma in catering and hotel management from Inspire Polytechnic, i have honed my skills in the culinary arts and hospitality industry.
+
+        Am not just a skilled baker, but also a serial volunteer, always looking for ways to give back to the community. My selflessness and dedication to helping others have earned me the respect and admiration of those around me. i have also discovered a love for exploration, constantly seeking out new adventures and experiences.
+        
+        In addition to my other talents, i am a frontend developer. My technical skills, combined with my friendly and jovial personality, makes me a valuable asset in any team.
+        
+        Overall, i am a well-rounded individual with a zest for life and a desire to make a positive impact on the world.</p>
+      </div>
+      <p id="learning-text">I am currently learning HTML and CSS</p>
+      <button id="update-button">Update Me</button>
+    </div>
+    <script>
+      const updateButton = document.querySelector('#update-button');
+      updateButton.addEventListener('click', function() {
+        const learningText = document.querySelector('#learning-text');
+        learningText.textContent = "I am currently learning JavaScript";
+      });
+    </script>
+</body>
+</html>
